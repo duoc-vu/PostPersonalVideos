@@ -1,0 +1,164 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 80px;
+    height: auto;
+}
+
+.para {
+    display: flex;
+    gap: 10px;
+}
+
+/* Anchor Styles */
+.Sign-up a,
+.logout a ,
+.user a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.Sign-up > a:hover,
+.logout > a:hover ,
+.user > a:hover{
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* Main Styles */
+.main {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+
+/* Styles for Mobile */
+/* Styles for Mobile */
+@media only screen and (max-width: 600px) {
+    body {
+        margin:0;
+
+        padding: 0;
+        color:brown;
+        background-color:antiquewhite;
+    }
+
+    header {
+        padding: 10px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .logo img {
+        max-width: 60px;
+    }
+
+    .para {
+        display:none;
+    }
+
+    .main {
+        width: 90%;
+        margin: 30px auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    form {
+        max-width: 100%;
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+
+    .links {
+        margin-top: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
